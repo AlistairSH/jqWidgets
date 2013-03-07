@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jqWidgets Demo</title>
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+		<script src="./scripts/jqWidgets.js"></script>
+		<script src="./scripts/jqWidgetsDemo.js"></script>
+	</head>
+	<body>
+		<h1>jqWidgets</h1>
+		<div>
+			<input type="submit" data-bind="jqWidgets: {widget: 'button'}, click: incrementBar">
+			</input>
+			<span data-bind="text:bar"></span>
+		</div>
+		<div>
+			<input type="text" data-bind="jqWidgets: { widget: 'datepicker', options: pickerOptions, observable: foo}">
+			</input>
+		</div>
+
+	</body>
+</html>
